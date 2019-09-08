@@ -1,0 +1,7 @@
+discord==1.0.1
+discord.py==1.1.1
+flask
+markovchain==0.2.4
+PyMarkovChain==1.8
+wikipedia==1.4.0
+youtube_dl==2019.5.20
