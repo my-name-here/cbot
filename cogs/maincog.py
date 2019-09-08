@@ -1,12 +1,10 @@
 from discord.ext import commands
 
-class MainCog:
+class commands(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(pass_context=True)
-    async def acommand(self, ctx, argument):
-       await self.bot.say("Stuff")        
+      
 
     @commands.command()
     async def roll(ctx, dice: str):
@@ -74,4 +72,4 @@ class MainCog:
         print(message.content)
 
 def setup(bot):
-    bot.add_cog(MainCog(bot))
+    bot.add_cog(commands(bot))
